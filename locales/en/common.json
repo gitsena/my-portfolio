@@ -1,0 +1,15 @@
+{
+    "hello": "Hello, I'm",
+    "greeting": "A graduate in Analysis and Systems Development from SPTech School, with experience in the industry working at Accenture Brasil, where I served as a full-stack developer.",
+    "mobileGreeting": "A graduate in Analysis and Systems Development from SPTech School, with experience in the industry working at Accenture Brasil, where I served as a full-stack developer.",
+    "linkedInProfileCTA": "See LinkedIn Profile",
+    "seeMyProjects": "See my projects",
+    "aboutMe": "About me",
+    "aboutMeDescription": "I am a dedicated professional passionate about software development. I have strong technical skills in various areas, including:\n\n - Front-end Development: JavaScript, HTML, CSS, Tailwind CSS, ReactJS, TypeScript.\n\n - Back-end Knowledge: Java, NodeJS, Spring Boot, MySQL, AWS.\n\n - Mobile Development: React Native, Kotlin.\n\n - Platform Experience: ServiceNow and Salesforce.\n\n - Version Control: I use Git and GitHub for code versioning.",
+    "hobbiesDescription": "I am always looking to enhance my technical skills and excited to collaborate on challenging projects. If you are looking for a committed and motivated developer, I am ready to contribute. Feel free to get in touch for more information.",
+    "myProjectsTitle": "My Projects",
+    "seeDemo": "SEE DEMO",
+    "paintingCompanyTitle": "WEB SITE ",
+    "personalBlogTitle": "PROJETO EDUCA",
+    "madeWithHeartText": "Made with ♥ By"
+}

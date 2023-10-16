@@ -1,0 +1,22 @@
+{
+    "hello": "Olá, sou",
+    "greeting": "Formado em Análise e Desenvolvimento de Sistemas pela SPTech School, com experiência no mercado na empresa Accenture Brasil, onde atuei como desenvolvedor full stack.",
+    "mobileGreeting": "Formado em Análise e Desenvolvimento de Sistemas pela SPTech School, com experiência no mercado na empresa Accenture Brasil, onde atuei como desenvolvedor full stack.",
+    "linkedInProfileCTA": "Ver perfil do LinkedIn",
+    "seeMyProjects": "Ver meus projetos",
+    "aboutMe": "Sobre mim",
+    "aboutMeDescription": "Sou um profissional dedicado e apaixonado pelo desenvolvimento de software. Tenho habilidades técnicas sólidas em diversas áreas, incluindo:",
+    "technicalSkills": [
+        "Desenvolvimento Front-end: JavaScript, HTML, CSS, Tailwind CSS, ReactJS, TypeScript",
+        "Conhecimentos em Back-end: Java, NodeJS, Spring Boot, MySQL, AWS",
+        "Desenvolvimento Mobile: React Native, Kotlin",
+        "Experiência em Plataformas: ServiceNow e Salesforce",
+        "Controle de Versão: Utilizo Git e GitHub para o versionamento de código"
+    ],
+    "hobbiesDescription": "Estou sempre em busca de aprimorar minhas habilidades técnicas e entusiasmado para colaborar em projetos desafiadores. Se você está procurando um desenvolvedor comprometido e motivado, estou pronto para contribuir. Entre em contato para mais informações.",
+    "myProjectsTitle": "Meus Projetos",
+    "seeDemo": "VER DEMO",
+    "paintingCompanyTitle": "WEB SITE ",
+    "personalBlogTitle": "PROJETO EDUCA",
+    "madeWithHeartText": "Feito com ♥ Por"
+}
