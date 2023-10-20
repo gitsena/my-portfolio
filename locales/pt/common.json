@@ -5,18 +5,22 @@
     "linkedInProfileCTA": "Ver perfil do LinkedIn",
     "seeMyProjects": "Ver meus projetos",
     "aboutMe": "Sobre mim",
-    "aboutMeDescription": "Sou um profissional dedicado e apaixonado pelo desenvolvimento de software. Tenho habilidades técnicas sólidas em diversas áreas, incluindo:",
-    "technicalSkills": [
-        "Desenvolvimento Front-end: JavaScript, HTML, CSS, Tailwind CSS, ReactJS, TypeScript",
-        "Conhecimentos em Back-end: Java, NodeJS, Spring Boot, MySQL, AWS",
-        "Desenvolvimento Mobile: React Native, Kotlin",
-        "Experiência em Plataformas: ServiceNow e Salesforce",
-        "Controle de Versão: Utilizo Git e GitHub para o versionamento de código"
-    ],
+    "aboutMeDescription": "Sou um profissional dedicado e apaixonado pelo desenvolvimento de software e tenho habilidades técnicas em diversas áreas, incluindo:",
     "hobbiesDescription": "Estou sempre em busca de aprimorar minhas habilidades técnicas e entusiasmado para colaborar em projetos desafiadores. Se você está procurando um desenvolvedor comprometido e motivado, estou pronto para contribuir. Entre em contato para mais informações.",
     "myProjectsTitle": "Meus Projetos",
     "seeDemo": "VER DEMO",
     "paintingCompanyTitle": "WEB SITE ",
-    "personalBlogTitle": "PROJETO EDUCA",
-    "madeWithHeartText": "Feito com ♥ Por"
+    "projectMobEduca": "PROJETO MOBILE EDUCA",
+    "projectWebEduca": "PROJETO WEB EDUCA",
+    "projectLsJourney": "PROJETO WEB LS-JOURNEY",
+    "projectMobJourney": "PROJETO MOBILE LS-JOURNEY",
+    "projectVtex": "PROJETO VTEX",
+    "projectTermovinho": "PROJETO TERMOVINHO",
+    "madeWithHeartText": "Feito com ♥ Por",
+    "skillFrontEnd": "Desenvolvimento Front-end: JavaScript, HTML, CSS, Tailwind CSS, ReactJS, TypeScript",
+    "skillBackEnd": "Conhecimentos em Back-end: Java, NodeJS, Spring Boot, MySQL, AWS",
+    "skillMobile": "Desenvolvimento Mobile: React Native, Kotlin",
+    "skillplatform": "Experiência em Plataformas: ServiceNow e Salesforce",
+    "skillVersioning": "Controle de Versão: Utilizo Git e GitHub para o versionamento de código"
+
 }

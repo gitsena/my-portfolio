@@ -4,10 +4,11 @@
 import React from "react";
 import Image from "next/image";
 import { FadeInWrapper } from "@/components/FadeInWrapper";
-import Link from "next/link";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 import useTranslation from "next-translate/useTranslation";
-import setLanguage from "next-translate/setLanguage";
+import { ProjectDemo } from "@/components/project";
+import { TechnicalSkills } from "../components/technicalSkills";
+import { ILanguageSelect } from "@/components/languageSelect";
 
 export default function Home() {
   const { t, lang } = useTranslation("common");
@@ -18,17 +19,9 @@ export default function Home() {
         id="hero-section"
         class="flex flex-col px-4 pt-12 xl:px-0 justify-center text-[#262d3e] bg-[whitesmoke] lg:flex relative overflow-hidden"
       >
+        <ILanguageSelect class="ml-auto" />
         <div class="flex flex-col lg:flex-row">
           <div class="max-w-4xl m-auto">
-            <select
-              onChange={(e) => setLanguage(e.target.value)}
-              defaultValue={lang}
-              class="float-right px-2 py-1 text-white bg-gray-800 rounded-md sm:float-left"
-            >
-              <option value="en">English 🇺🇸</option>
-              <option value="pt">Português 🇧🇷</option>
-              <option value="es">Español 🇪🇸</option>
-            </select>
             <p class="mt-20 max-w-xl sm:max-w-2xl text-2xl sm:text-3xl bg-[#262d3e] bg-inherit text-whitetext-[#262d3e] sm:text-left text-center font-light">
               {t("hello")}
             </p>
@@ -38,7 +31,7 @@ export default function Home() {
             <div class="relative self-center max-w-md mx-auto mt-12 sm:hidden sm:left-0 left-2 fadeIn">
               <Image
                 alt=""
-                src="/profile.jpg"
+                src="/andre-pf.jpg"
                 width={600}
                 height={600}
                 class="rounded-full sm:mt-8"
@@ -72,7 +65,7 @@ export default function Home() {
               src="/andre-pf.jpg"
               width={600}
               height={600}
-              class="rounded-full sm:mt-8"
+              class="rounded-full"
             />
           </div>
           <div class="relative my-12 text-center sm:hidden">
@@ -147,10 +140,11 @@ export default function Home() {
               <h2 class="pt-20 text-4xl font-bold sm:pt-0 sm:text-6xl">
                 {t("aboutMe")}
               </h2>
-              <p class="mt-12 text-2xl sm:text-3xl font-extralight sm:line-[43px]">
+              <p class="mt-12 text-2xl sm:text-2xl font-extralight sm:line-[43px]">
                 {t("aboutMeDescription")}
               </p>
-              <p class="my-12 text-2xl sm:text-3xl font-extralight sm:line-[43px]">
+              <TechnicalSkills />
+              <p class="my-12 text-2xl sm:text-2xl font-extralight sm:line-[43px]">
                 {t("hobbiesDescription")}
               </p>
             </div>
@@ -161,13 +155,7 @@ export default function Home() {
                 </video>
               </div>
             </div>
-            <a
-              href="https://www.linkedin.com/in/andr%C3%A9-dias-de-sena-b6b915225/"
-              target="_blank"
-              class="hover:bg-blue-400 sm:hidden block mx-auto my-24 px-6 py-3 text-white uppercase font-semibold transition-all bg-[#0A66C2] rounded-md text-xl sm:hover:scale-110"
-            >
-              {t("linkedInProfileCTA")}
-            </a>
+
             <div class="top-0 self-center hidden max-w-md m-auto rounded-md lg:block lg:relative">
               <video width={400} autoPlay loop muted class="rounded-3xl">
                 <source type="video/mp4" src="/videos/appeduca.mp4" />
@@ -204,90 +192,53 @@ export default function Home() {
           </h2>
           <section
             id="projetos"
-            class="flex flex-col items-center justify-center w-full gap-8 mx-auto lg:flex-row"
+            class="grid lg:grid-cols-2 justify-items-center flex-col lg:flex-row items-center justify-center w-full gap-8 mx-auto"
           >
-            <Link href="https://gitsena.github.io/projeto-termovinho/">
-              <div class="self-center m-auto border-4 border-slate-200 max-w-xl sm:min-h-[380px] rounded-xl hover:border-[#0A66C2] transition-all ease-linear duration-200">
-                <div class="relative sm:min-h-[380px] hidden sm:block">
-                  <div class="absolute sm:min-h-[380px] -bottom-1 z-10 w-full h-full text-center rounded-sm opacity-0 hover:opacity-100 hover:block">
-                    <p class="relative rounded-b-md text-white bg-[#0A66C2] font-bold top-[84%] py-4 text-xl">
-                      {t("seeDemo")}
-                    </p>
-                  </div>
-                  <h3 class="py-4 font-semibold text-center">
-                    {t("paintingCompanyTitle")}
-                  </h3>
-                  <video width={700} autoPlay loop muted class="rounded-md">
-                    <source
-                      type="video/mp4"
-                      src="/videos/controleestoque.mp4"
-                    />
-                  </video>
-                </div>
-                <div class="sm:min-h-[380px] relative sm:hidden">
-                  <div class="sm:min-h-[380px] absolute bottom-0 z-10 w-full h-full text-center rounded-sm opacity-0 hover:opacity-100 hover:block">
-                    <p class="relative rounded-b-sm text-white bg-[#0A66C2] font-bold top-[92%] sm:top-[84%] py-4 text-xl">
-                      {t("seeDemo")}
-                    </p>
-                  </div>
-                  <h3 class="py-4 font-semibold text-center">
-                    {t("paintingCompanyTitle")}
-                  </h3>
-                  {/* mobile */}
-                  <video
-                    height={320}
-                    width={350}
-                    autoPlay
-                    loop
-                    muted
-                    class="rounded-md h-80"
-                  >
-                    <source type="video/mp4" src="/videos/appeduca.mp4" />
-                  </video>
-                </div>
-              </div>
-            </Link>
-            <Link href="https://liquidstudiojourney.web.app/">
-              <div class="sm:min-h-[380px] max-w-xl self-center m-auto border-4 rounded-xl border-slate-200 hover:border-[#0A66C2] transition-all ease-linear duration-200">
-                <div class="sm:min-h-[380px] relative hidden rounded-md sm:block">
-                  <div class="sm:min-h-[380px] absolute bottom-0 z-10 w-full h-full text-center rounded-md opacity-0 hover:opacity-100 hover:block">
-                    <p class="relative rounded-b-md text-white bg-[#0A66C2] font-bold top-[85%] py-4 text-xl">
-                      {t("seeDemo")}
-                    </p>
-                  </div>
-                  <h3 class="py-4 font-semibold text-center">
-                    {t("personalBlogTitle")}
-                  </h3>
-                  <video width={700} autoPlay loop muted class="relative z-0">
-                    <source
-                      type="video/mp4"
-                      src="/videos/controleestoque.mp4"
-                    />
-                  </video>
-                </div>
-                <div class="sm:min-h-[380px] relative rounded-md sm:hidden">
-                  <div class="sm:min-h-[380px] absolute bottom-0 z-10 w-full h-full text-center rounded-sm opacity-0 hover:opacity-100 hover:block">
-                    <p class="relative rounded-b-sm text-white bg-[#0A66C2] font-bold top-[92%] sm:top-[84%] py-4 text-xl">
-                      {t("seeDemo")}
-                    </p>
-                  </div>
-                  <h3 class="py-4 font-semibold text-center">
-                    {t("personalBlogTitle")}
-                  </h3>
-                  {/* mobile */}
-                  <video
-                    height={320}
-                    width={350}
-                    autoPlay
-                    loop
-                    muted
-                    class="rounded-md h-80"
-                  >
-                    <source type="video/mp4" src="/videos/appeduca.mp4" />
-                  </video>
-                </div>
-              </div>
-            </Link>
+            {/* Educa */}
+            <ProjectDemo
+              isWeb
+              href={"https://portfolio-andresena.netlify.app/"}
+              title={t("projectWebEduca")}
+              src={"/videos/webeduca.mp4"}
+            />
+            <div class="sm:hidden sm:min-h-[380px] max-w-xl self-center m-auto border-4 rounded-xl border-slate-200 hover:border-[#0A66C2] transition-all ease-linear duration-200 block">
+              <ProjectDemo
+                isWeb={false}
+                href={"https://portfolio-andresena.netlify.app/"}
+                title={t("projectMobEduca")}
+                src={"/videos/appeduca.mp4"}
+              />
+            </div>
+            {/* LS Journey */}
+            <ProjectDemo
+              isWeb
+              href={"https://liquidstudiojourney.web.app/"}
+              title={t("projectLsJourney")}
+              src={"/videos/lsjourney.mp4"}
+            />
+            <div class="sm:hidden sm:min-h-[380px] max-w-xl self-center m-auto border-4 rounded-xl border-slate-200 hover:border-[#0A66C2] transition-all ease-linear duration-200 block">
+              <ProjectDemo
+                isWeb={false}
+                href={"https://liquidstudiojourney.web.app/"}
+                title={t("projectMobJourney")}
+                src={"/videos/moblsjourney.mp4"}
+              />
+            </div>
+
+            {/* VTEX */}
+            <ProjectDemo
+              isWeb
+              href={"https://portfolio-andresena.netlify.app/"}
+              title={t("projectVtex")}
+              src={"/videos/vtex.mp4"}
+            />
+            {/* Termovinho */}
+            <ProjectDemo
+              isWeb
+              href={"https://gitsena.github.io/projeto-termovinho/"}
+              title={t("projectTermovinho")}
+              src={"/videos/termovinho.mp4"}
+            />
           </section>
         </section>
       </div>
