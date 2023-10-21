@@ -6,7 +6,8 @@
     "seeMyProjects": "See my projects",
     "aboutMe": "About me",
     "aboutMeDescription": "I am a dedicated professional passionate about software development. I have strong technical skills in various areas, including:\n\n - Front-end Development: JavaScript, HTML, CSS, Tailwind CSS, ReactJS, TypeScript.\n\n - Back-end Knowledge: Java, NodeJS, Spring Boot, MySQL, AWS.\n\n - Mobile Development: React Native, Kotlin.\n\n - Platform Experience: ServiceNow and Salesforce.\n\n - Version Control: I use Git and GitHub for code versioning.",
-    "hobbiesDescription": "I am always looking to hone my technical skills and am enthusiastic about collaborating on challenging projects. If you are looking for a committed and motivated developer, I am ready to contribute. Contact me for more information.",    "myProjectsTitle": "My Projects",
+    "hobbiesDescription": "I am always looking to hone my technical skills and am enthusiastic about collaborating on challenging projects. If you are looking for a committed and motivated developer, I am ready to contribute. Contact me for more information.",
+    "myProjectsTitle": "My Projects",
     "seeDemo": "SEE DEMO",
     "paintingCompanyTitle": "WEB SITE ",
     "projectMobEduca": "MOBILE EDUCA PROJECT",
@@ -15,5 +16,10 @@
     "projectMobJourney": "MOBILE PROJECT LS-JOURNEY",
     "projectVtex": "PROJECT VTEX",
     "projectTermovinho": "PROJECT TERMOVINHO",
-    "madeWithHeartText": "Made with ♥ By"
+    "madeWithHeartText": "Made with ♥ By",
+    "skillFrontEnd": "Front-end development: JavaScript, HTML, CSS, Tailwind CSS, ReactJS, TypeScript",
+    "skillBackEnd": "Back-end knowledge: Java, NodeJS, Spring Boot, MySQL, AWS",
+    "skillMobile": "Mobile Development: React Native, Kotlin",
+    "skillplatform": "Experience in Platforms: ServiceNow and Salesforce",
+    "skillVersioning": "Version Control: I use Git and GitHub for code versioning"
 }
