@@ -4,7 +4,7 @@
 import React from "react";
 import Image from "next/image";
 import { FadeInWrapper } from "@/components/FadeInWrapper";
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope } from "react-icons/fa6";
 import useTranslation from "next-translate/useTranslation";
 import { ProjectDemo } from "@/components/project";
 import { TechnicalSkills } from "../components/technicalSkills";
@@ -21,7 +21,7 @@ export default function Home() {
       >
         <ILanguageSelect class="ml-auto" />
         <div class="flex flex-col lg:flex-row">
-          <div class="max-w-4xl m-auto">
+          <div class="max-w-4xl mt--10 mx-28">
             <p class="mt-20 max-w-xl sm:max-w-2xl text-2xl sm:text-3xl bg-[#262d3e] bg-inherit text-whitetext-[#262d3e] sm:text-left text-center font-light">
               {t("hello")}
             </p>
@@ -32,8 +32,8 @@ export default function Home() {
               <Image
                 alt=""
                 src="/andre-pf.jpg"
-                width={600}
-                height={600}
+                width={400}
+                height={400}
                 class="rounded-full sm:mt-8"
               />
             </div>
@@ -63,9 +63,9 @@ export default function Home() {
             <Image
               alt=""
               src="/andre-pf.jpg"
-              width={600}
-              height={600}
-              class="rounded-full"
+              width={420}
+              height={420}
+              class="rounded-full sm:mt-8"
             />
           </div>
           <div class="relative my-12 text-center sm:hidden">
@@ -110,25 +110,6 @@ export default function Home() {
             d="M0,64L120,80C240,96,480,128,720,128C960,128,1200,96,1320,80L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
           ></path>
         </svg>
-        <div class="absolute flex justify-center w-60 -bottom-12 sm:bottom-[20%] 2xl:bottom-[30%] gap-x-4">
-          <a
-            href="https://www.linkedin.com/in/andr%C3%A9-dias-de-sena-b6b915225/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaLinkedin size={60} fill="white" />
-          </a>
-          <a href="https://github.com/gitsena" target="_blank" rel="noreferrer">
-            <FaGithub size={60} fill="white" />
-          </a>
-          <a
-            href="https://wa.me/5511962759225"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaWhatsapp size={60} fill="white" />
-          </a>
-        </div>
       </div>
       <div
         id="about_me"
@@ -162,7 +143,39 @@ export default function Home() {
               </video>
             </div>
           </div>
-          <div class="self-center max-w-md m-auto rounded-md">
+
+          <div class="relative self-center m-auto flex justify-center w-60 -bottom-12 gap-x-4">
+            <a
+              href="https://www.linkedin.com/in/andr%C3%A9-dias-de-sena-b6b915225/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin size={60} fill="white" />
+            </a>
+            <a
+              href="https://github.com/gitsena"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGithub size={60} fill="white" />
+            </a>
+            <a
+              href="https://wa.me/5511962759225"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaWhatsapp size={60} fill="white" />
+            </a>
+            <a
+              href="mailto:andrediasdesena@gmail.com?subject=&body="
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaEnvelope size={60} fill="white" />
+            </a>
+          </div>
+
+          {/** <div class="self-center max-w-md m-auto rounded-md">
             <Image
               alt=""
               src="/arrow-down.svg"
@@ -175,7 +188,7 @@ export default function Home() {
                   .scrollIntoView({ behavior: "smooth" })
               }
             />
-          </div>
+          </div> */}
         </FadeInWrapper>
       </div>
       <div class="bg-white">
@@ -186,14 +199,14 @@ export default function Home() {
             d="M0,192L80,197.3C160,203,320,213,480,213.3C640,213,800,203,960,192C1120,181,1280,171,1360,165.3L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
           ></path>
         </svg>
-        <section class="flex flex-col justify-center w-full gap-8 pb-20">
-          <h2 class="text-4xl font-extrabold text-center text-[#262d3e] sm:text-6xl">
+        <section
+          id="projetos"
+          class="flex flex-col justify-center w-full gap-8 pb-20"
+        >
+          <h2 class="text-4xl font-extrabold text-center text-[#262d3e] sm:text-6xl mb-5">
             {t("myProjectsTitle")}
           </h2>
-          <section
-            id="projetos"
-            class="grid lg:grid-cols-2 justify-items-center flex-col lg:flex-row items-center justify-center w-full gap-8 mx-auto"
-          >
+          <section class="grid lg:grid-cols-2 justify-items-center flex-col lg:flex-row items-center justify-center w-full gap-8 mx-auto">
             {/* Educa */}
             <ProjectDemo
               isWeb
