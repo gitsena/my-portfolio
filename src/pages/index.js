@@ -210,7 +210,7 @@ export default function Home() {
             {/* Educa */}
             <ProjectDemo
               isWeb
-              href={"https://portfolio-andresena.netlify.app/"}
+              href={"https://web-educa.netlify.app/"}
               title={t("projectWebEduca")}
               src={"/videos/webeduca.mp4"}
             />
