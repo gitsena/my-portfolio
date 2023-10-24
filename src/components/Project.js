@@ -7,7 +7,7 @@ export const ProjectDemo = ({ href, title, src, isWeb, className }) => {
   return (
     <Link target="_blank" href={href} class={className}>
       {isWeb ? (
-        <div class="sm:min-h-[380px] max-w-xl self-center m-auto border-4 rounded-xl border-slate-200 hover:border-[#0A66C2] transition-all ease-linear duration-200 hidden sm:block">
+        <div class="sm:min-h-[380px] max-w-xl self-center m-auto border-4 rounded-xl border-slate-300 hover:border-[#0A66C2] transition-all ease-linear duration-200 hidden sm:block">
           <div class="sm:min-h-[380px] relative hidden rounded-md sm:block">
             <div class="sm:min-h-[380px] absolute bottom-0 z-10 w-full h-full text-center rounded-md opacity-0 hover:opacity-100 hover:block">
               <p class="relative rounded-b-md text-white bg-[#0A66C2] font-bold top-[85%] py-4 text-xl">

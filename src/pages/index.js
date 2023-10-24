@@ -4,12 +4,12 @@
 import React from "react";
 import Image from "next/image";
 import { FadeInWrapper } from "@/components/FadeInWrapper";
-import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope } from "react-icons/fa6";
 import useTranslation from "next-translate/useTranslation";
-import { ProjectDemo } from "@/components/project";
-import { TechnicalSkills } from "../components/technicalSkills";
+import { ProjectDemo } from "@/components/Project";
+import { TechnicalSkills } from "@/components/technicalSkills";
 import { ILanguageSelect } from "@/components/languageSelect";
-
+import { Technologies } from "@/components/Technologies";
+import { Contact } from "@/components/Contact";
 export default function Home() {
   const { t, lang } = useTranslation("common");
 
@@ -21,14 +21,14 @@ export default function Home() {
       >
         <ILanguageSelect class="ml-auto" />
         <div class="flex flex-col lg:flex-row">
-          <div class="max-w-4xl mt--10 mx-28">
+          <div class="max-w-4xl mt--10 mx-0 lg:mx-28">
             <p class="mt-20 max-w-xl sm:max-w-2xl text-2xl sm:text-3xl bg-[#262d3e] bg-inherit text-whitetext-[#262d3e] sm:text-left text-center font-light">
               {t("hello")}
             </p>
-            <h2 class="text-5xl font-black text-center sm:text-left fadeIn sm:text-6xl">
+            <h2 class="text-2xl lg:text-5xl font-black text-center sm:text-left fadeIn sm:text-6xl">
               André Dias de Sena
             </h2>
-            <div class="relative self-center max-w-md mx-auto mt-12 sm:hidden sm:left-0 left-2 fadeIn">
+            <div class="relative self-center max-w-md lg:mx-auto mt-12 mx-28 sm:hidden sm:left-0 left-2 fadeIn">
               <Image
                 alt=""
                 src="/andre-pf.jpg"
@@ -37,7 +37,7 @@ export default function Home() {
                 class="rounded-full sm:mt-8"
               />
             </div>
-            <div class="my-12 max-w-xl sm:max-w-2xl text-2xl sm:text-3xl bg-[#262d3e] sm:bg-inherit rounded-md text-white sm:text-[#262d3e] text-center font-light">
+            <div class="my-12 max-w-xl lg:max-w-2xl text-xl sm:text-3xl bg-[#262d3e] sm:bg-inherit rounded-md text-white sm:text-[#262d3e] text-center font-light">
               <p class="sm:hidden p-6 text-left xl:p-0 line-[43px]">
                 {t("mobileGreeting")}
               </p>
@@ -124,57 +124,26 @@ export default function Home() {
               <p class="mt-12 text-2xl sm:text-2xl font-extralight sm:line-[43px]">
                 {t("aboutMeDescription")}
               </p>
-              <TechnicalSkills />
               <p class="my-12 text-2xl sm:text-2xl font-extralight sm:line-[43px]">
                 {t("hobbiesDescription")}
               </p>
             </div>
             <div class="relative mt-12 text-center sm:hidden">
               <div class="self-center max-w-md m-auto rounded-xl">
-                <video width={400} autoPlay loop muted class="rounded-xl">
-                  <source type="video/mp4" src="/videos/app-educa.mp4" />
+                <video width={400} height={400} autoPlay loop muted class="rounded-xl">
+                  <source type="video/mp4" src="/videos/appeduca.mp4" />
                 </video>
               </div>
             </div>
 
             <div class="top-0 self-center hidden max-w-md m-auto rounded-md lg:block lg:relative">
-              <video width={400} autoPlay loop muted class="rounded-3xl">
+              <video width={400} height={600} autoPlay loop muted class="rounded-3xl">
                 <source type="video/mp4" src="/videos/appeduca.mp4" />
               </video>
             </div>
           </div>
 
-          <div class="relative self-center m-auto flex justify-center w-60 -bottom-12 gap-x-4">
-            <a
-              href="https://www.linkedin.com/in/andr%C3%A9-dias-de-sena-b6b915225/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaLinkedin size={60} fill="white" />
-            </a>
-            <a
-              href="https://github.com/gitsena"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaGithub size={60} fill="white" />
-            </a>
-            <a
-              href="https://wa.me/5511962759225"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaWhatsapp size={60} fill="white" />
-            </a>
-            <a
-              href="mailto:andrediasdesena@gmail.com?subject=&body="
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaEnvelope size={60} fill="white" />
-            </a>
-          </div>
-
+          <Contact />
           {/** <div class="self-center max-w-md m-auto rounded-md">
             <Image
               alt=""
@@ -191,7 +160,7 @@ export default function Home() {
           </div> */}
         </FadeInWrapper>
       </div>
-      <div class="bg-white">
+      <div class="bg-[whitesmoke]">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#1e293b"
@@ -199,9 +168,10 @@ export default function Home() {
             d="M0,192L80,197.3C160,203,320,213,480,213.3C640,213,800,203,960,192C1120,181,1280,171,1360,165.3L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
           ></path>
         </svg>
+
         <section
           id="projetos"
-          class="flex flex-col justify-center w-full gap-8 pb-20"
+          class="flex flex-col justify-center w-full gap-8 pb-20 "
         >
           <h2 class="text-4xl font-extrabold text-center text-[#262d3e] sm:text-6xl mb-5">
             {t("myProjectsTitle")}
@@ -255,6 +225,44 @@ export default function Home() {
           </section>
         </section>
       </div>
+
+      <div class="relative flex justify-center">
+        <svg
+          class="w-full bg-slate-800"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+        >
+          <path
+            fill="#f5f5f5"
+            fillOpacity="1"
+            d="M0,64L120,80C240,96,480,128,720,128C960,128,1200,96,1320,80L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
+
+      <div
+        id="technologies"
+        class="justify-center w-full text-white bg-slate-800"
+      >
+        <h2 class="text-4xl font-bold sm:pt-0 sm:text-6xl relative mx-auto flex justify-center w-full">
+          Tecnologias
+        </h2>
+
+        <Technologies />
+      </div>
+      <div class="bg-white">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+        >
+          <path
+            fill="#1e293b"
+            fillOpacity="1"
+            d="M0,192L80,197.3C160,203,320,213,480,213.3C640,213,800,203,960,192C1120,181,1280,171,1360,165.3L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
+
       <p class="my-5 text-lg text-center">
         {t("madeWithHeartText")}
         <a
