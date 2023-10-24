@@ -32,8 +32,8 @@ export default function Home() {
               <Image
                 alt="perfil"
                 src="/andre-pf.jpg"
-                width={400}
-                height={400}
+                width={420}
+                height={420}
                 class="rounded-full sm:mt-8 "
               />
             </div>
@@ -52,8 +52,8 @@ export default function Home() {
             <Image
               alt="perfil"
               src="/andre-pf.jpg"
-              width={420}
-              height={420}
+              width={500}
+              height={500}
               class="rounded-full sm:mt-8"
             />
           </div>
@@ -144,7 +144,7 @@ export default function Home() {
 
         <section
           id="projetos"
-          class="flex flex-col justify-center w-full gap-8 pb-20 "
+          class="flex flex-col justify-center w-full gap-8 pb-20"
         >
           <h2 class="text-4xl font-extrabold text-center text-[#262d3e] sm:text-6xl mb-5">
             {t("myProjectsTitle")}
@@ -237,7 +237,7 @@ export default function Home() {
         </svg>
       </div>
 
-      <p class="mb-5 text-lg text-center mr-28">
+      <p class="mb-5 text-lg text-center">
         {t("madeWithHeartText")}
         <a
           class="underline"

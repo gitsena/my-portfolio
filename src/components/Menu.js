@@ -21,7 +21,7 @@ export const Menu = () => {
       <a
         target="_blank"
         class="hover:text-blue-400 py-3 px-6 text-[#0A66C2] uppercase font-semibold transition-all rounded-md text-base
-      hover:border-b-4 border-blue-400 ."
+      hover:border-b-4 border-blue-400"
         onClick={() =>
           document
             .querySelector("#about_me")
@@ -33,7 +33,7 @@ export const Menu = () => {
       <a
         target="_blank"
         class="hover:text-blue-400 py-3 px-6 text-[#0A66C2] uppercase font-semibold transition-all rounded-md text-base 
-      hover:border-b-4 border-blue-400 ."
+      hover:border-b-4 border-blue-400"
         onClick={() =>
           document
             .querySelector("#technologies")
