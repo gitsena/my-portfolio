@@ -3,21 +3,21 @@
 // @use-client
 import React from "react";
 import Image from "next/image";
-import { FadeInWrapper } from "@/components/FadeInWrapper";
 import useTranslation from "next-translate/useTranslation";
 import { ProjectDemo } from "@/components/Project";
-import { TechnicalSkills } from "@/components/technicalSkills";
 import { ILanguageSelect } from "@/components/languageSelect";
 import { Technologies } from "@/components/Technologies";
 import { Contact } from "@/components/Contact";
+import { Menu } from "@/components/Menu";
+
 export default function Home() {
   const { t, lang } = useTranslation("common");
 
   return (
-    <main class="flex flex-col text-black transition-all">
+    <main id="top" class="flex flex-col text-black transition-all">
       <div
         id="hero-section"
-        class="flex flex-col px-4 pt-12 xl:px-0 justify-center text-[#262d3e] bg-[whitesmoke] lg:flex relative overflow-hidden"
+        class="flex flex-col px-4 pt-8 xl:px-0 justify-center text-[#262d3e] bg-[whitesmoke] lg:flex relative overflow-hidden"
       >
         <ILanguageSelect class="ml-auto" />
         <div class="flex flex-col lg:flex-row">
@@ -25,16 +25,16 @@ export default function Home() {
             <p class="mt-20 max-w-xl sm:max-w-2xl text-2xl sm:text-3xl bg-[#262d3e] bg-inherit text-whitetext-[#262d3e] sm:text-left text-center font-light">
               {t("hello")}
             </p>
-            <h2 class="text-2xl lg:text-5xl font-black text-center sm:text-left fadeIn sm:text-6xl">
+            <h2 class="text-3xl lg:text-5xl font-black text-center sm:text-left fadeIn sm:text-6xl">
               André Dias de Sena
             </h2>
             <div class="relative self-center max-w-md lg:mx-auto mt-12 mx-28 sm:hidden sm:left-0 left-2 fadeIn">
               <Image
-                alt=""
+                alt="perfil"
                 src="/andre-pf.jpg"
                 width={400}
                 height={400}
-                class="rounded-full sm:mt-8"
+                class="rounded-full sm:mt-8 "
               />
             </div>
             <div class="my-12 max-w-xl lg:max-w-2xl text-xl sm:text-3xl bg-[#262d3e] sm:bg-inherit rounded-md text-white sm:text-[#262d3e] text-center font-light">
@@ -45,41 +45,17 @@ export default function Home() {
                 {t("greeting")}
               </p>
             </div>
-            <div class="hidden m-auto mb-8 sm:block">
-              <a
-                target="_blank"
-                class="hover:bg-blue-400 py-3 px-6 text-white uppercase font-semibold transition-all bg-[#0A66C2] rounded-md text-xl sm:hover:scale-110"
-                onClick={() =>
-                  document
-                    .querySelector("#projetos")
-                    .scrollIntoView({ behavior: "smooth" })
-                }
-              >
-                {t("seeMyProjects")}
-              </a>
-            </div>
+
+            <Menu />
           </div>
           <div class="relative self-center hidden max-w-md mx-auto sm:block sm:left-0 left-2 fadeIn">
             <Image
-              alt=""
+              alt="perfil"
               src="/andre-pf.jpg"
               width={420}
               height={420}
               class="rounded-full sm:mt-8"
             />
-          </div>
-          <div class="relative my-12 text-center sm:hidden">
-            <a
-              target="_blank"
-              class="hover:bg-blue-400 px-6 py-3 text-white uppercase font-semibold transition-all bg-[#0A66C2] rounded-md text-xl sm:hover:scale-110"
-              onClick={() =>
-                document
-                  .querySelector("#projetos")
-                  .scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              {t("seeMyProjects")}
-            </a>
           </div>
         </div>
         <div class="self-center max-w-md m-auto rounded-md">
@@ -115,29 +91,34 @@ export default function Home() {
         id="about_me"
         class="justify-center px-4 text-white lg:flex bg-slate-800 sm:flex-col"
       >
-        <FadeInWrapper>
-          <div class="relative flex flex-col xl:flex-row">
-            <div class="max-w-2xl px-4 m-auto lg:relative">
-              <h2 class="pt-20 text-4xl font-bold sm:pt-0 sm:text-6xl">
-                {t("aboutMe")}
-              </h2>
-              <p class="mt-12 text-2xl sm:text-2xl font-extralight sm:line-[43px]">
-                {t("aboutMeDescription")}
-              </p>
-              <p class="my-12 text-2xl sm:text-2xl font-extralight sm:line-[43px]">
-                {t("hobbiesDescription")}
-              </p>
-            </div>
-
-            <div class="top-0 self-center m-auto rounded-md lg:relative">
-              <video class="h-[400px] lg:h-[650px] rounded-3xl" autoPlay loop muted>
-                <source type="video/mp4" src="/videos/appeduca.mp4" />
-              </video>
-            </div>
+        <div class="relative flex flex-col xl:flex-row">
+          <div class="max-w-2xl px-4 m-auto lg:mx-auto lg:mt-0 lg:relative">
+            <h2 class="pt-20 text-4xl font-bold sm:pt-0 sm:text-6xl sm:text-left text-center">
+              {t("aboutMe")}
+            </h2>
+            <p class="mt-12 text-2xl sm:text-2xl font-extralight sm:line-[43px]">
+              {t("aboutMeDescription")}
+            </p>
+            <p class="my-12 text-2xl sm:text-2xl font-extralight sm:line-[43px]">
+              {t("hobbiesDescription")}
+            </p>
+            <Contact />
           </div>
 
-          <Contact />
-          {/** <div class="self-center max-w-md m-auto rounded-md">
+          <div class="top-0 self-center lg:m-auto mt-32 rounded-md lg:relative">
+            <Image
+              alt="perfil"
+              src="/dev.jpeg"
+              width={400}
+              height={400}
+              class="rounded-lg"
+            />
+            {/**<video class="h-[400px] lg:h-[650px] rounded-3xl" autoPlay loop muted>
+                <source type="video/mp4" src="/videos/appeduca.mp4" /></video>*/}
+          </div>
+        </div>
+
+        {/** <div class="self-center max-w-md m-auto rounded-md">
             <Image
               alt=""
               src="/arrow-down.svg"
@@ -151,7 +132,6 @@ export default function Home() {
               }
             />
           </div> */}
-        </FadeInWrapper>
       </div>
       <div class="bg-[whitesmoke]">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -230,24 +210,25 @@ export default function Home() {
             fillOpacity="1"
             d="M0,64L120,80C240,96,480,128,720,128C960,128,1200,96,1320,80L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
           ></path>
+          <text
+            id="technologies"
+            class="text-8xl lg:text-6xl font-bold sm:pt-0 sm:text-6xl relative m-auto flex justify-center w-full"
+            x="50%"
+            y="80%"
+            dy=".3em"
+            text-anchor="middle"
+            fill="#ffffff"
+          >
+            {t("technologies")}
+          </text>
         </svg>
       </div>
 
-      <div
-        id="technologies"
-        class="justify-center w-full text-white bg-slate-800"
-      >
-        <h2 class="text-4xl font-bold sm:pt-0 sm:text-6xl relative mx-auto flex justify-center w-full">
-          Tecnologias
-        </h2>
-
+      <div class="justify-center w-full text-white bg-slate-800">
         <Technologies />
       </div>
       <div class="bg-white">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 320"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#1e293b"
             fillOpacity="1"
@@ -256,15 +237,15 @@ export default function Home() {
         </svg>
       </div>
 
-      <p class="my-5 text-lg text-center">
+      <p class="mb-5 text-lg text-center mr-28">
         {t("madeWithHeartText")}
         <a
           class="underline"
+          target="_blank"
           href="https://www.linkedin.com/in/andr%C3%A9-dias-de-sena-b6b915225/"
         >
-          André Sena
+          {" "}André Sena
         </a>
-        <br />
       </p>
     </main>
   );

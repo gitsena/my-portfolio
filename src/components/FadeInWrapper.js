@@ -1,10 +1,7 @@
-// src/components/FadeInWrapper.js
-// @ts-nocheck
-// @use-client
 import React, { useState, useEffect, useRef } from 'react';
 
 export const FadeInWrapper = (props) => {
-    const [isVisible, setVisible] = useState(true);
+    const [isVisible, setVisible] = useState(false);
     const domRef = useRef();
 
     useEffect(() => {
@@ -15,6 +12,12 @@ export const FadeInWrapper = (props) => {
       return () => observer.unobserve(domRef.current);
     }, []);
 
+    useEffect(() => {
+      if (isVisible) {
+        props.onVisible();
+      }
+    }, [isVisible]);
+
     return (
       <div
         className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
@@ -23,4 +26,4 @@ export const FadeInWrapper = (props) => {
         {props.children}
       </div>
     );
-}
+};

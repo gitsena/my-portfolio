@@ -5,8 +5,9 @@
     "linkedInProfileCTA": "Ver perfil do LinkedIn",
     "seeMyProjects": "Ver meus projetos",
     "aboutMe": "Sobre mim",
-    "aboutMeDescription": "Sou um profissional dedicado e apaixonado pelo desenvolvimento de software e tenho habilidades técnicas em diversas áreas",
-    "hobbiesDescription": "Estou sempre em busca de aprimorar minhas habilidades técnicas e entusiasmado para colaborar em projetos desafiadores. Se você está procurando um desenvolvedor comprometido e motivado, estou pronto para contribuir. Entre em contato para mais informações.",
+    "technologies": "Tecnologías",
+    "aboutMeDescription": "Sou um profissional dedicado e apaixonado pelo desenvolvimento de software, sempre em busca de aprimorar minhas habilidades técnicas. Sou aplicado, proativo e participativo, gosto de interagir e aprender com outras pessoas. Meu objetivo neste momento é me consolidar como um desenvolvedor Full-stack.",
+    "hobbiesDescription": "Estou entusiasmado para colaborar em projetos desafiadores. Se você está procurando um desenvolvedor comprometido e motivado, estou pronto para contribuir. Entre em contato para mais informações.",
     "myProjectsTitle": "Meus Projetos",
     "seeDemo": "VER DEMO",
     "paintingCompanyTitle": "WEB SITE ",
@@ -21,6 +22,10 @@
     "skillBackEnd": "Conhecimentos em Back-end: Java, NodeJS, Spring Boot, MySQL, AWS",
     "skillMobile": "Desenvolvimento Mobile: React Native, Kotlin",
     "skillplatform": "Experiência em Plataformas: ServiceNow e Salesforce",
-    "skillVersioning": "Controle de Versão: Utilizo Git e GitHub para o versionamento de código"
+    "skillVersioning": "Controle de Versão: Utilizo Git e GitHub para o versionamento de código",
+    "level": "Nivel:",
+    "intermediary" : "intermediário",
+    "basic": "básico",
+    "advanced": "avançado"
 
 }

@@ -1,3 +1,4 @@
+import useTranslation from "next-translate/useTranslation";
 import {
   DiHtml5,
   DiCss3,
@@ -106,6 +107,7 @@ const technologiesItem = [
 ];
 
 export const Technologies = () => {
+  const { t, lang } = useTranslation("common");
   const chunkedTechnologies = [];
   const chunkSize = 4;
   for (let i = 0; i < technologiesItem.length; i += chunkSize) {
@@ -125,8 +127,13 @@ export const Technologies = () => {
               >
                 {tech.icon}
                 <div class="lg:text-left text-center">
-                  <h3 class="lg:text-xl text-base font-bold mb-1">{tech.name}</h3>
-                  <span class="lg:text-sm text-xs">Nível:<p class="text-yellow-500">{tech.nivel}</p> </span>
+                  <h3 class="lg:text-xl text-base font-bold mb-1">
+                    {tech.name}
+                  </h3>
+                  <span class="lg:text-sm text-xs">
+                    {t("level")}
+                    <p class="text-yellow-500">{tech.nivel}</p>
+                  </span>
                 </div>
               </div>
             ))}
