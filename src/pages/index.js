@@ -128,16 +128,9 @@ export default function Home() {
                 {t("hobbiesDescription")}
               </p>
             </div>
-            <div class="relative mt-12 text-center sm:hidden">
-              <div class="self-center max-w-md m-auto rounded-xl">
-                <video width={400} height={400} autoPlay loop muted class="rounded-xl">
-                  <source type="video/mp4" src="/videos/appeduca.mp4" />
-                </video>
-              </div>
-            </div>
 
-            <div class="top-0 self-center hidden max-w-md m-auto rounded-md lg:block lg:relative">
-              <video width={400} height={600} autoPlay loop muted class="rounded-3xl">
+            <div class="top-0 self-center m-auto rounded-md lg:relative">
+              <video class="h-[400px] lg:h-[650px] rounded-3xl" autoPlay loop muted>
                 <source type="video/mp4" src="/videos/appeduca.mp4" />
               </video>
             </div>
