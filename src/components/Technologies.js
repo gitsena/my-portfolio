@@ -115,7 +115,7 @@ export const Technologies = () => {
   }
 
   return (
-    <div class="grid grid-cols-2 flex-col lg:grid-cols-1 justify-center w-full">
+    <div class="grid flex-col grid-cols-1 justify-center w-full">
       {chunkedTechnologies.map((chunk, index) => (
         <div class="max-w-full mt-10 lg:relative" key={index}>
           <div class="flex flex-wrap justify-center gap-6">

@@ -109,9 +109,9 @@ export default function Home() {
             <Image
               alt="perfil"
               src="/dev.jpeg"
-              width={400}
-              height={400}
-              class="rounded-lg"
+              width={300}
+              height={300}
+              class="rounded-lg lg:h-[400px] lg:w-[400px]"
             />
             {/**<video class="h-[400px] lg:h-[650px] rounded-3xl" autoPlay loop muted>
                 <source type="video/mp4" src="/videos/appeduca.mp4" /></video>*/}
@@ -157,7 +157,7 @@ export default function Home() {
               title={t("projectWebEduca")}
               src={"/videos/webeduca.mp4"}
             />
-            <div class="sm:hidden sm:min-h-[380px] max-w-xl self-center m-auto border-4 rounded-xl border-slate-200 hover:border-[#0A66C2] transition-all ease-linear duration-200 block">
+            <div class="sm:hidden sm:min-h-[380px] max-w-xs self-center m-auto border-4 rounded-xl border-slate-200 hover:border-[#0A66C2] transition-all ease-linear duration-200 block">
               <ProjectDemo
                 isWeb={false}
                 href={"https://portfolio-andresena.netlify.app/"}

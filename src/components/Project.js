@@ -22,7 +22,7 @@ export const ProjectDemo = ({ href, title, src, isWeb, className }) => {
         </div>
       ) : (
         <div class="sm:min-h-[380px] relative rounded-md sm:hidden">
-          <div class="sm:min-h-[380px] absolute bottom-0 z-10 w-full h-full text-center rounded-sm opacity-0 hover:opacity-100 hover:block">
+          <div class="absolute bottom-0 z-10 w-full text-center rounded-sm opacity-0 hover:opacity-100 hover:block">
             <p class="relative rounded-b-sm text-white bg-[#0A66C2] font-bold top-[92%] sm:top-[84%] py-4 text-xl">
               {t("seeDemo")}
             </p>
