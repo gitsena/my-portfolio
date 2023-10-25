@@ -146,7 +146,7 @@ export default function Home() {
           id="projetos"
           class="flex flex-col justify-center w-full gap-8 pb-20"
         >
-          <h2 class="text-4xl font-extrabold text-center text-[#262d3e] sm:text-6xl mt-5 lg;mb-5">
+          <h2 class="text-4xl font-extrabold text-center text-[#262d3e] sm:text-6xl mt-5 lg:mb-8 lg:mt-0">
             {t("myProjectsTitle")}
           </h2>
           <section class="grid lg:grid-cols-2 justify-items-center flex-col lg:flex-row items-center justify-center w-full gap-8 mx-auto">
