@@ -28,13 +28,13 @@ export default function Home() {
             <h2 class="text-3xl lg:text-5xl font-black text-center sm:text-left fadeIn sm:text-6xl">
               André Dias de Sena
             </h2>
-            <div class="relative self-center max-w-md lg:mx-auto mt-12 mx-28 sm:hidden sm:left-0 left-2 fadeIn">
+            <div class="relative self-center max-w-md lg:mx-auto mt-12 mx-20 sm:hidden sm:left-0 left-2 fadeIn">
               <Image
                 alt="perfil"
                 src="/andre-pf.jpg"
                 width={420}
                 height={420}
-                class="rounded-full sm:mt-8 "
+                class="rounded-full "
               />
             </div>
             <div class="my-12 max-w-xl lg:max-w-2xl text-xl sm:text-3xl bg-[#262d3e] sm:bg-inherit rounded-md text-white sm:text-[#262d3e] text-center font-light">
@@ -54,7 +54,7 @@ export default function Home() {
               src="/andre-pf.jpg"
               width={500}
               height={500}
-              class="rounded-full sm:mt-8"
+              class="rounded-full sm:mt-8 lg:h-[520px] lg:w-[520px]"
             />
           </div>
         </div>
@@ -93,7 +93,7 @@ export default function Home() {
       >
         <div class="relative flex flex-col xl:flex-row">
           <div class="max-w-2xl px-4 m-auto lg:mx-auto lg:mt-0 lg:relative">
-            <h2 class="pt-20 text-4xl font-bold sm:pt-0 sm:text-6xl sm:text-left text-center">
+            <h2 class="lg:pt-20 pt-4 text-4xl font-bold sm:pt-0 sm:text-6xl sm:text-left text-center">
               {t("aboutMe")}
             </h2>
             <p class="mt-12 text-2xl sm:text-2xl font-extralight sm:line-[43px]">
@@ -146,7 +146,7 @@ export default function Home() {
           id="projetos"
           class="flex flex-col justify-center w-full gap-8 pb-20"
         >
-          <h2 class="text-4xl font-extrabold text-center text-[#262d3e] sm:text-6xl mb-5">
+          <h2 class="text-4xl font-extrabold text-center text-[#262d3e] sm:text-6xl mt-5 lg;mb-5">
             {t("myProjectsTitle")}
           </h2>
           <section class="grid lg:grid-cols-2 justify-items-center flex-col lg:flex-row items-center justify-center w-full gap-8 mx-auto">
@@ -212,7 +212,7 @@ export default function Home() {
           ></path>
           <text
             id="technologies"
-            class="text-8xl lg:text-6xl font-bold sm:pt-0 sm:text-6xl relative m-auto flex justify-center w-full"
+            class="text-6xl font-bold relative m-auto lg:flex justify-center w-full hidden md:block"
             x="50%"
             y="80%"
             dy=".3em"
@@ -225,6 +225,9 @@ export default function Home() {
       </div>
 
       <div class="justify-center w-full text-white bg-slate-800">
+        <text class="text-4xl pt-4 font-bold relative m-auto text-center w-full sm:hidden block">
+          {t("technologies")}
+        </text>
         <Technologies />
       </div>
       <div class="bg-white">
@@ -244,7 +247,8 @@ export default function Home() {
           target="_blank"
           href="https://www.linkedin.com/in/andr%C3%A9-dias-de-sena-b6b915225/"
         >
-          {" "}André Sena
+          {" "}
+          André Sena
         </a>
       </p>
     </main>
