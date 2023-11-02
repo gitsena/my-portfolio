@@ -184,7 +184,7 @@ export default function Home() {
             {/* VTEX */}
             <ProjectDemo
               isWeb
-              href={"https://portfolio-andresena.netlify.app/"}
+              href={"https://test-vtex.netlify.app/"}
               title={t("projectVtex")}
               src={"/videos/vtex.mp4"}
             />
